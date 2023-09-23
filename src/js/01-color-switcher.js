@@ -6,6 +6,7 @@ const StopBtn=document.querySelector("[data-stop]");
 const body=document.querySelector("body");
 let timerStart;
 const typeStart=()=>{
+    clearInterval(timerStart);
      timerStart=setInterval(()=>{
         body.style.backgroundColor=getRandomHexColor();
         StartBtn.disabled = true;
