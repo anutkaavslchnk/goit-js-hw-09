@@ -9,7 +9,7 @@ const options = {
   minuteIncrement: 1,
   onClose(selectedDates) {
     const selectedDate = selectedDates[0];
-    currDate = new Date();
+     const currDate = new Date();
     
     if (selectedDate <= currDate) {
       Notiflix.Notify.failure("Please choose a date in the future");
