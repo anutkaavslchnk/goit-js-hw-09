@@ -23,7 +23,7 @@ const handleSubmit = (event) => {
   const delayStep = parseFloat(form.elements.step.value);
 
   if (!isNaN(amount) && amount >= 1) {
-    for (let i = 0; i < amount; i++) {
+    for (let i = 1; i < amount; i++) {
       const mixOfDelays = delayFirst + delayStep * i;
       createPromise(i, mixOfDelays)
         .then(({ position, delay }) => {
