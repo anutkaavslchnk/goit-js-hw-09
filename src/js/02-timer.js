@@ -1,4 +1,4 @@
- import flatpickr from "flatpickr";
+import flatpickr from "flatpickr";
 import "flatpickr/dist/flatpickr.min.css";
 import Notiflix from 'notiflix';
 
@@ -19,7 +19,7 @@ const options = {
       Notiflix.Notify.failure("Please choose a date in the future");
     } else {
       btn.disabled = false;
-      startTime(selectedDate, currDate);
+
     }
   },
 };
